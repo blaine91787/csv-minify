@@ -1,0 +1,19 @@
+﻿<Window x:Class="CSVMinify.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LargeCSVShrinker" Height="587.412" Width="534"
+        Icon="icon.ico">
+    <Grid>
+        <Button x:Name="SubmitPath" Content="Begin" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="75" Click="SubmitPath_Click"/>
+        <TextBox x:Name="PathField" HorizontalAlignment="Left" Height="55" Margin="10,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497"/>
+        <TextBox x:Name="NumOfLines" HorizontalAlignment="Left" Height="23" Margin="336,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="LogBox" HorizontalAlignment="Left" Height="281" Margin="10,256,0,0" TextWrapping="Wrap" Text="Large CSV Reader Log:&#xD;&#xA;" VerticalAlignment="Top" Width="497" IsManipulationEnabled="True" IsReadOnly="True"/>
+        <Label Content="Path you would like to resize:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="The number of lines you would like to view (as an integer) :" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="AllRecordsCheckBox" Content="Click to split file into subfiles" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" Checked="AllRecordsCheckBox_Checked" Unchecked="AllRecordsCheckBox_Unchecked"/>
+        <Button x:Name="BrowseButton" Content="Browse" HorizontalAlignment="Left" Margin="444,110,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.36,-1.85" Height="21" Click="Button_Click"/>
+        <TextBox x:Name="NumOfLines_Subfiles" HorizontalAlignment="Left" Height="23" Margin="336,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Background="LightGray" IsEnabled="False"/>
+        <Label Content="The number of lines per file (as an integer) :" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
